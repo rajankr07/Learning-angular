@@ -1,0 +1,22 @@
+<h2>Add Task</h2>
+
+<div>
+  <label>Employee Name</label>
+  <input type="text" [value]="employeeName" (input)="employeeName = $any($event.target).value" />
+</div>
+
+<div>
+  <label>Task</label>
+  <input type="text" [value]="taskTitle" (input)="taskTitle = $any($event.target).value" />
+</div>
+
+<div>
+  <label>Priority</label>
+  <select [value]="priority" (change)="priority = $any($event.target).value">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
+</div>
+
+<button [disabled]="!employeeName || !taskTitle" (click)="addTask()">Add Task</button>
