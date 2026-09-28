@@ -1,0 +1,13 @@
+<h2>Task Counter</h2>
+
+<p>Total Tasks: {{ taskCount() }}</p>
+
+<p>Completed:{{ completedCount() }}</p>
+
+<p>Pending Tasks: {{ pendingCount() }}</p>
+
+<button (click)="addTask()">Add Task</button>
+
+<button (click)="completeTask()" [disabled]="completedCount() >= taskCount()">Complete Task</button>
+
+<button (click)="resetTasks()">Reset</button>
