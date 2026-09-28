@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Task } from '../../models/task.model';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-task-form',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './task-form.component.html',
   styleUrls: ['./task-form.component.css'],
 })

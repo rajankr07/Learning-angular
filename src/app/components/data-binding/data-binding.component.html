@@ -1,0 +1,35 @@
+<div>
+  <h2>1. Interpolation</h2>
+  <h3>Current count : {{ count }}</h3>
+  <button (click)="increase()">Increase</button>
+  <button (click)="decrease()">Decrease</button>
+</div>
+
+<div>
+  <h2>2. Property Binding</h2>
+
+  <button [disabled]="isDisabled">Submit</button>
+
+  <button (click)="switchDisabled()">Submit</button>
+
+  <input [placeholder]="placeholderText" />
+</div>
+
+<div>
+  <h2>3. Event Binding</h2>
+
+  <select (change)="onChange($event)">
+    <label>Select your state..</label>
+    <option>Bihar</option>
+    <option>UP</option>
+    <option>MP</option>
+    <option>west Bengal</option>
+    <option>Kerala</option>
+  </select>
+</div>
+
+<div>
+  <form (submit)="save()">
+    <button type="submit">Save</button>
+  </form>
+</div>

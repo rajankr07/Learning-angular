@@ -1,0 +1,37 @@
+<div>
+  <h2>4. Two-Way Data Binding</h2>
+  <input [(ngModel)]="userName" />
+</div>
+
+<h3>Live Preview</h3>
+
+<div>
+  <p>here is your message : {{ message }}</p>
+
+  <p>Type your message :<input [(ngModel)]="message" /></p>
+</div>
+
+<div>
+  <h3>Checkbox</h3>
+
+  <input type="checkbox" [(ngModel)]="accepted" />
+
+  <p>{{ accepted }}</p>
+</div>
+
+<h3>Select Dropdown</h3>
+
+<select [(ngModel)]="fruit">
+  <option>Apple</option>
+  <option>Banana</option>
+  <option>Cherry</option>
+  <option>Dragon-fruit</option>
+</select>
+
+<p>selected Fruit : {{ fruit }}</p>
+
+<h3>Textarea</h3>
+
+<textarea [(ngModel)]="description"></textarea>
+
+<p>Description :- {{ description }}</p>

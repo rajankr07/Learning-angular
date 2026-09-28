@@ -12,5 +12,10 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "html.autoClosingTags": true,
+  "editor.inlineSuggest.enabled": false
+
 }
