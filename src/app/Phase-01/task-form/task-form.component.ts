@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Task } from '../../models/task.model';
+import { Task } from '../../models/phase-01-models/task.model';
 import { FormsModule } from '@angular/forms';
 
 @Component({
