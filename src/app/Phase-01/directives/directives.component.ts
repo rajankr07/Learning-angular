@@ -4,7 +4,7 @@ import { NgClass, NgStyle, NgIf, NgFor } from '@angular/common';
 @Component({
   selector: 'app-directives',
   standalone: true,
-  imports: [NgClass, NgStyle, NgIf, NgFor],
+  imports: [NgClass, NgStyle],
   templateUrl: './directives.component.html',
   styleUrls: ['./directives.component.css'],
 })
