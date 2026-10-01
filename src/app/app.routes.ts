@@ -9,6 +9,8 @@ import { DirectivesComponent } from './Phase-01/directives/directives.component'
 import { TaskFormComponent } from './Phase-01/task-form/task-form.component';
 import { TaskCounter } from './Phase-01/task-counter/task-counter';
 import { TwoWayBindingComponent } from './Phase-01/two-way-binding/two-way-binding.component';
+import { UserDetailsComponent } from './Phase-02/user-details-component/user-details-component';
+
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -25,4 +27,5 @@ export const routes: Routes = [
 
   // Phase 02
   { path: 'phase-02', component: Home02 },
+  { path: 'phase-02/users/:id', component: UserDetailsComponent  }
 ];
