@@ -1,10 +1,36 @@
 <div>
-  <h3>Directives -- ngClass</h3>
+  <h2>Directives</h2>
 
-  <p [ngClass]="{ active: isActive }">This text turns green when active</p>
+  <p>Login-status : {{ isLoggedIn }}</p>
+
+  <button (click)="login()">Click Me</button>
+
+  <h3>topics- NgIf</h3>
+
+  <div *ngIf="isLoggedIn; else loginMessage">Welcome Rajan</div>
+
+  <ng-template #loginMessage> <p>Please login first.</p> </ng-template>
+
+  <h3>topics- NgFor</h3>
+
+  <div *ngFor="let gadget of gadgets">
+    {{ gadget }}
+  </div>
+
+  <h3>topics- *ngFor with objects</h3>
+
+  <div *ngFor="let product of products">
+    <h4>{{ product.name }} --- ₹{{ product.price }}</h4>
+  </div>
+
+  <h3>Attribute Directives</h3>
+
+  <p [ngClass]="{ active: isActive }">Account Active : {{ isActive }}</p>
 
   <button (click)="toggle()">Toggle</button>
 </div>
+
+<h3>Combine example :</h3>
 
 <div>
   <h2>Products</h2>
