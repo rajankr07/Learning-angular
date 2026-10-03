@@ -4,17 +4,24 @@ import { NgClass, NgStyle, NgIf, NgFor } from '@angular/common';
 @Component({
   selector: 'app-directives',
   standalone: true,
-  imports: [NgClass, NgStyle],
+  imports: [NgClass, NgIf, NgFor],
   templateUrl: './directives.component.html',
   styleUrls: ['./directives.component.css'],
 })
 export class DirectivesComponent {
+  isLoggedIn = true;
   isActive = false;
   isAvailable = true;
 
   toggle() {
     this.isActive = !this.isActive;
   }
+
+  login() {
+    this.isLoggedIn = !this.isLoggedIn;
+  }
+
+  gadgets = ['iPhone', 'MacBook', 'AirPods'];
 
   products = [
     {
@@ -24,6 +31,10 @@ export class DirectivesComponent {
     {
       name: 'MacBook',
       price: 120000,
+    },
+    {
+      name: 'AirPods',
+      price: 20000,
     },
   ];
 }
