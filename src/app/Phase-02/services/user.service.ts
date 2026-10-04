@@ -4,8 +4,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class User {
-  
+export class UserService {
   private apiUrl = 'https://jsonplaceholder.typicode.com/users';
 
   constructor(private http: HttpClient) {}
@@ -14,3 +13,5 @@ export class User {
     return this.http.get(this.apiUrl);
   }
 }
+
+
