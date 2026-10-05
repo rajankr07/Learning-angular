@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../services/user.service';
-import { map } from 'rxjs';
-import { tap } from 'rxjs';
+import { map, tap, catchError, of } from 'rxjs';
 
 @Component({
   selector: 'app-http',
