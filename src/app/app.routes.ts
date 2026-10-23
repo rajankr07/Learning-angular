@@ -11,6 +11,8 @@ import { TaskCounter } from './Phase-01/task-counter/task-counter';
 import { TwoWayBindingComponent } from './Phase-01/two-way-binding/two-way-binding.component';
 import { UserDetailsComponent } from './Phase-02/user-details-component/user-details-component';
 import { Http } from './Phase-02/http/http';
+import { TemplateForm } from './Phase-02/template-form/template-form';
+import { ReactiveForm } from './Phase-02/reactive-form/reactive-form';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -34,4 +36,6 @@ export const routes: Routes = [
       import('./Phase-02/lazy-loading/lazy-loading').then((m) => m.LazyLoading),
   },
    { path: 'phase-02/http-route', component: Http },
+   { path: 'phase-02/template-form', component:TemplateForm },
+   { path: 'phase-02/reactive-form', component: ReactiveForm }
 ];

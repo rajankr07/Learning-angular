@@ -16,3 +16,24 @@ export class Http {
     });
   }
 }
+
+
+// this.userService.getUsers()
+//   .pipe(
+
+//     tap(users => {
+//       console.log('Received:', users);
+//     }),
+
+//     map(users => users.map(user => user.name)),
+
+//     catchError(error => {
+//       console.error('Something went wrong:', error);
+
+//       return of([]);
+//     })
+
+//   )
+//   .subscribe(names => {
+//     console.log('Names:', names);
+//   });

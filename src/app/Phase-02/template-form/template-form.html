@@ -1,0 +1,27 @@
+<p>template-form works!</p>
+
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label> Name </label>
+    <input type="text" name="name" [(ngModel)]="name" />
+
+    <p>Name: {{ name }}</p>
+  </div>
+
+  <div>
+    <label> Email </label>
+
+    <input type="email" name="email" [(ngModel)]="email" />
+
+    <p>Email: {{ email }}</p>
+  </div>
+  <div>
+    <label> Age </label>
+
+    <input type="number" name="age" [(ngModel)]="age" />
+
+    <p>Age: {{ age }}</p>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
