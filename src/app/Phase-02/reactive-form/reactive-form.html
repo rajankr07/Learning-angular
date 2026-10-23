@@ -1,0 +1,22 @@
+<p>reactive-form works!</p>
+
+<h2>Reactive Registration Form</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="submitForm()">
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+  </div>
+
+  <div>
+    <label>Password</label>
+    <input type="password" formControlName="password" />
+  </div>
+
+  <button type="submit">Register</button>
+</form>
