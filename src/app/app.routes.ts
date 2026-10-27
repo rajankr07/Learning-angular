@@ -13,6 +13,7 @@ import { UserDetailsComponent } from './Phase-02/user-details-component/user-det
 import { Http } from './Phase-02/http/http';
 import { TemplateForm } from './Phase-02/template-form/template-form';
 import { ReactiveForm } from './Phase-02/reactive-form/reactive-form';
+import { Home03 } from './Phase-03/home-03/home-03';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -32,10 +33,13 @@ export const routes: Routes = [
   { path: 'phase-02/users/:id', component: UserDetailsComponent },
   {
     path: 'phase-02/lazy-loading',
-    loadComponent: () =>
-      import('./Phase-02/lazy-loading/lazy-loading').then((m) => m.LazyLoading),
+    loadComponent: () => import('./Phase-02/lazy-loading/lazy-loading').then((m) => m.LazyLoading),
   },
-   { path: 'phase-02/http-route', component: Http },
-   { path: 'phase-02/template-form', component:TemplateForm },
-   { path: 'phase-02/reactive-form', component: ReactiveForm }
+  { path: 'phase-02/http-route', component: Http },
+  { path: 'phase-02/template-form', component: TemplateForm },
+  { path: 'phase-02/reactive-form', component: ReactiveForm },
+
+  // Phase 03
+
+  { path: 'phase-03', component: Home03 },
 ];
